@@ -1,2 +1,2 @@
-# Inventory-System
-Example of well encapsulated code retaining immutability of bag cells
+# Item and bag item logic
+Example of encapsulated code retaining immutability of bag cells
