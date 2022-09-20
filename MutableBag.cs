@@ -25,7 +25,7 @@
     {
         var newCell = new BagCell(item, count);
 
-        if (IsThereEnoughCapacityFor(newCell))
+        if (HasCapacityFor(newCell))
         {
             if (IsItemAlreadyExists(item, out int cellIndex))
             {
@@ -42,7 +42,7 @@
         return false;
     }
 
-    private bool IsThereEnoughCapacityFor(BagCell newCell)
+    private bool HasCapacityFor(BagCell newCell)
     {
         return _capacity >= CurrentWeight + newCell.Weight;
     }
